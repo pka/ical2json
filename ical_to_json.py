@@ -11,7 +11,7 @@ def ical_to_json(url, start, days):
         start=start,
         end=end
     )
-    events.sort(key=lambda event: icalparser.normalize(event.start))
+    events.sort(key=lambda event: event.start)
     # for event in events:
     #     print("%s: %s" % (event.start, event.summary))
     return json.dumps(events,
