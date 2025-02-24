@@ -22,7 +22,7 @@ def ical_to_json(url, start, days):
 
 def json_converter(o):
     if isinstance(o, datetime):
-        return o.__str__()
+        return o.astimezone().isoformat()
     elif isinstance(o, icalparser.Event):
         return event_to_dict(o)
 
