@@ -1,0 +1,10 @@
+[project]
+name = "ical2json"
+version = "0.1.0"
+description = "Convert iCal calendar to JSON format"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "icalevents~=0.2.1",
+    "icalendar~=6.1.1"
+]

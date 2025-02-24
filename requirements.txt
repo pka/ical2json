@@ -1,1 +1,0 @@
-icalevents==0.1.25
